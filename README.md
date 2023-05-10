@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Crear proyecto
+creas una carpeta con un nombre de un proyecto ejemplo `mkdir todos` y luego ejecutas el siguiente comando
+`npx create-react-app ./`
+
+React es imperativo y no declarativo
+JSX es una sintaxis que nos permite hacer la interfaz grafica en html y css. Esto se transforma con Babel.
