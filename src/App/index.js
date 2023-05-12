@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import logo from '../logo.svg';
 import {AppUI} from './AppUI.js'
-import { useLocalStorage } from '../TodoContext/useLocalStorage';
 import { TodoProvider } from '../TodoContext';
 // import './App.css';
 
@@ -17,8 +16,6 @@ import { TodoProvider } from '../TodoContext';
 
 
 function App() {
-
-  
 
   console.log('antes use effect');
   React.useEffect(() => {
