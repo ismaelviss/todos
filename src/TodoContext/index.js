@@ -44,9 +44,21 @@ function TodoProvider(props) {
         saveTodos(newTodos);
     };
 
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            completed: false,
+            text
+        });
+
+        saveTodos(newTodos);
+    };
+
+    const [openModal, setOpenModal] = React.useState(false);
+
     return (
         <TodoContext.Provider value={{
-            loading,error,totalTodos,completedTodos,searchValue,setSearchValue,searchTodos,completeTodo,deleteTodo
+            loading,error,totalTodos,completedTodos,searchValue,setSearchValue,searchTodos,completeTodo,deleteTodo,openModal, setOpenModal, addTodo
         }}>
             {props.children}
         </TodoContext.Provider>

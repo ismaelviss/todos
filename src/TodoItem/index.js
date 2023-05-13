@@ -1,5 +1,6 @@
 import React from "react";
 import './TodoItem.css'
+import { BsFillBookmarkCheckFill } from 'react-icons/bs';
 
 function TodoItem(props) {
 
@@ -15,7 +16,7 @@ function TodoItem(props) {
 
     return(
         <li className="TodoItem">
-            <span className={`Icon Icon-check ${completed && 'Icon-check--active'}`} onClick={onComplete}>√</span>
+            <span className={`Icon Icon-check ${completed && 'Icon-check--active'}`} onClick={onComplete}><BsFillBookmarkCheckFill /></span>
             <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>{text}</p>
             <span className="Icon Icon-delete" onClick={onDelete}>X</span>
         </li>
